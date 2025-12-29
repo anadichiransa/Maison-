@@ -1,182 +1,167 @@
+/* Custom Color Palette Variables */
+:root {
+  --cream: #E6DDA3;
+  --sage: #9EAD5C;
+  --forest: #4F7F63;
+  --dark-green: #1F3D2B;
+  --white: #ffffff;
+  --light-gray: #f9f9f9;
+}
+
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
 }
 
-
-main{
-	padding: 30px;
+body {
+  margin: 0;
+  background-color: var(--white);
+  color: var(--dark-green);
 }
 
-.search-container{
+main {
+  padding: 30px;
+}
+
+/* 1. Search Section - Using var(--dark-green) for a bold look */
+.search-container {
   display: flex;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
   flex-direction: column;
-  border: 2px solid #f2f2f2;
-  width: fit-content;
-  margin: auto;
-  border-radius: 15px;	
-  color: rgb(0,100,245);
-  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--dark-green);
+  color: var(--cream);
+  width: 100%; /* Spans across for a premium feel */
+  margin: 0 0 40px 0;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(31, 61, 43, 0.2);
 }
-label{
-  color:black;
+
+.search-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
-  
-input[type="text"] {
-	border: 2px solid #f2f2f2;
-	border-radius: 10px;
-  font-size: 28px;
+
+.search-container label {
+  color: var(--cream);
+  font-weight: 500;
+}
+
+/* Form Elements Styling */
+input[type="text"], input[type="number"], select {
+  border: 2px solid var(--sage);
+  border-radius: 12px;
+  font-size: 18px;
+  padding: 12px;
   text-align: center;
-  width: 280px;
-	outline: 0;
-	flex-grow: 1;
-	font-weight:200;
+  width: 300px;
+  outline: 0;
   margin: 10px;
-}
-  
-button{
-	background-color:  rgb(0,100,245);  
-	color: white;
-	border-radius: 10px;
-  font-size: 28px;
-  padding: 10px;
-	cursor: pointer;
-	transition: 0s;
-  margin: 12px;
-}
-   
-button:hover {
-	background-color:  rgb(0, 80, 199);
+  background: var(--white);
 }
 
-
-.container{
-	display: flex;
-	width: 100%;
-	margin-top: 50px;
-	column-gap: 30px;
-}
-
-
-.all-items{
-	width: 65%;
-	padding: 20px 30px;
-	background-color: #f2f2f2;
-	border-radius: 25px;
-	position:relative;
-}
-
-.all-items .gallery{
-	display: flex;
-	flex-flow: row wrap;
-	gap: 30px;
-}
-
-
-
-.all-items .gallery .card:hover, .favorites .gallery .card:hover, .activities .gallery .card:hover{
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-
-
-
-
-
-
-.all-items .gallery .card .description h3, .favorites .gallery .card .description h3{
-	font-size: 16px;
-	margin: 0px;
-}
-
-
-.favorites{
-	width: 35%;
-	padding: 20px;
-	background-color: #f2f2f2;
-	border-radius: 25px;
-	position: relative;
-}
-
-.favorites .gallery{
-	display: flex;
-	flex-flow: column;
-	gap: 30px;
-}
-
-.favorites .gallery .card{
-	cursor: pointer;
-	height:min-content;
-	border-radius: 15px;
-	background-color: white;
-	align-items:center;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	transition: 0.3s;
-	padding: 8px;
-	display: flex;
-	gap: 20px;
-}
-
-.favorites .gallery .card .image{
-	height:100%;
-  }
-.favorites .gallery .card img{
-	border-radius: 15px;
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 0px;
-	width:160px;
-	height: 100%;
-	object-fit: cover;
-}
-
-.favorites .gallery .card .description{
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
-.all-items .gallery .card {
+button {
+  background-color: var(--forest);
+  color: var(--cream);
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 12px 25px;
   cursor: pointer;
-  flex: 1 0 260px;
-  gap: 5px;
-  height: 550px; 
-  border-radius: 15px;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  padding: 8px;
+  transition: all 0.3s ease;
+  margin: 12px;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: var(--sage);
+  color: var(--dark-green);
+  transform: translateY(-2px);
+}
+
+/* 2. Main Content Layout [cite: 329] */
+.container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.all-items .gallery .card .image {
-  height: 70%;
-  overflow: hidden; 
-}
-
-.all-items .gallery .card img {
-  border-radius: 15px;
   width: 100%;
-  height: 100%;
-  object-fit:contain;
+  column-gap: 30px;
 }
 
-.all-items .gallery .card .description,
-.favorites .gallery.card .description {
+/* Left Side: Property Gallery */
+.all-items {
+  width: 65%;
+  padding: 25px;
+  background-color: var(--light-gray);
+  border-radius: 25px;
+  border: 1px solid var(--cream);
+}
+
+.all-items .gallery {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 25px;
+}
+
+/* 3. Property Card Styling [cite: 315] */
+.card {
+  cursor: pointer;
+  flex: 1 0 280px;
+  background-color: var(--white);
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  padding: 12px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: min-content;
-  line-height: 25px;
-  padding-left: 8px;
+  border: 1px solid transparent;
 }
 
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(31, 61, 43, 0.15);
+  border-color: var(--sage);
+}
 
+.card img {
+  border-radius: 14px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
+.description h3 {
+  color: var(--dark-green);
+  font-size: 1.1rem;
+  margin: 15px 0 5px 0;
+}
 
+/* 4. Favorites Sidebar [cite: 328, 357] */
+.favorites {
+  width: 35%;
+  padding: 25px;
+  background-color: var(--cream); /* Using your accent color */
+  border-radius: 25px;
+  border: 2px dashed var(--forest);
+  min-height: 400px;
+}
+
+.favorites h2 {
+  color: var(--dark-green);
+  text-align: center;
+}
+
+/* 5. Responsive Media Queries [cite: 329, 330] */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .all-items, .favorites {
+    width: 100%;
+  }
+  .favorites {
+    order: -1; /* Favorites appear on top for mobile users */
+  }
+}
 
 
 /* Media query for mobile screens */

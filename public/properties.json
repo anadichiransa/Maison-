@@ -21,61 +21,6 @@
       "location": "Crofton Road, Orpington BR6",
       "picture": "images/prop2.png",
       "added": { "month": "September", "day": 14, "year": 2022 }
-    },
-    {
-      "id": "prop3",
-      "type": "House",
-      "bedrooms": 5,
-      "price": 1200000,
-      "tenure": "Freehold",
-      "description": "Luxury 5-bedroom detached villa with spacious garden...",
-      "location": "High Street, NW1",
-      "picture": "images/prop3.png",
-      "added": { "month": "January", "day": 5, "year": 2023 }
-    },
-    {
-      "id": "prop4",
-      "type": "Flat",
-      "bedrooms": 1,
-      "price": 250000,
-      "tenure": "Leasehold",
-      "description": "Cozy studio flat perfect for first-time buyers...",
-      "location": "Station Road, BR1",
-      "picture": "images/prop4.png",
-      "added": { "month": "December", "day": 20, "year": 2022 }
-    },
-    {
-      "id": "prop5",
-      "type": "House",
-      "bedrooms": 4,
-      "price": 850000,
-      "tenure": "Freehold",
-      "description": "Period property with original features...",
-      "location": "Green Lane, SE10",
-      "picture": "images/prop5.png",
-      "added": { "month": "March", "day": 10, "year": 2023 }
-    },
-    {
-      "id": "prop6",
-      "type": "Flat",
-      "bedrooms": 3,
-      "price": 600000,
-      "tenure": "Leasehold",
-      "description": "Spacious penthouse with city views...",
-      "location": "Park Lane, W1",
-      "picture": "images/prop6.png",
-      "added": { "month": "June", "day": 15, "year": 2023 }
-    },
-    {
-      "id": "prop7",
-      "type": "House",
-      "bedrooms": 2,
-      "price": 450000,
-      "tenure": "Freehold",
-      "description": "Charming cottage in a quiet cul-de-sac...",
-      "location": "Oak Avenue, BR3",
-      "picture": "images/prop7.png",
-      "added": { "month": "August", "day": 2, "year": 2023 }
     }
   ]
 }
