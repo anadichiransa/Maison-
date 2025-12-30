@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SearchBar = () => {
+function SearchBar() {
   return (
     <section className="search-container">
       <h1>Believe in Finding it</h1>
