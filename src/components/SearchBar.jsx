@@ -49,9 +49,13 @@ const SearchBar = ({onSearch}) => {
                     </div>
                 </div>
 
-                <div className="filter-button">
-                    <button type="button">For Sale</button>
-                    <button type="button">For rent</button>
+                {/*Search by amount of bedrooms*/}
+                <div className="filter-group">
+                    <label>Bedrooms</label>
+                    <div className="input-row">
+                        <input type="number" name="minBedrooms" placeholder="Min" onChange={handleChange}/>
+                        <input type="number" name="maxBedrooms" placeholder="Max" onChange={handleChange}/>
+                        </div>
                 </div>
             </form>
         </section>
