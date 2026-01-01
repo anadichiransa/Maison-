@@ -20,6 +20,11 @@ function App(){
     }
   };
 
+  //Removing single property from favorites 
+  const removeFromFavorites = (id) => {
+    setFavorites(favorites.filter(fav => fav.id !== id));
+  };
+
   
 
   //Function to fetch data
