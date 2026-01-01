@@ -22,8 +22,31 @@ function App(){
 
     //Fucntion to handle data input
     const handleSearch = (criteria) => {
-      console.logO("Searching for: " , criteria);
-    };
+      const filtered = allProperties.filter(prop => {
+
+        //Search by Location
+        const matchLocation = prop.location.toLowerCase().includes(criteria.term.toLowerCase());
+
+        //Search by Type
+        const matchType = criteria.type === "any" || prop.type === criteria.type;
+
+        //Search by Price
+        const minP = parseFloat(criteria.minPrice) || 0 ;
+        const maxP = parseFloat(criteria.maxPrice) || Number.MAX_VALUE;
+        const matchPrice = prop.price >= minP && prop.price <= maxP;
+
+        //Search By number of bedrooms
+        const minB = parseInt(criteria.minBedrooms) || 0;
+        const maxB = parseInt(criteria.maxBedrooms) || 100;
+        const matchBedrooms = prop.bedrooms >= minB && prop.bedrooms <= maxB;
+
+        //return the properties that match the conditions
+        return matchLocation && matchType && matchPrice && matchBedrooms;
+
+    });
+
+    setFilteredProperties(filtered);
+  };
 
     //Render the UI
     return (
