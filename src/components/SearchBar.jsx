@@ -1,14 +1,53 @@
 import React, {useState} from "react";
 
-function SearchBar(){
+const SearchBar = ({onSearch}) => {
+    const [formData, setFormData] = useState({
+        term: " ",
+        type: "any",
+        minPrice: " ",
+        maxPrice: " ",
+        minBedrooms: " ",
+        maxBedrooms:" "
+    });
+
+    const handleChange = (e) => {
+        const {name, value} = e.target;
+        const updatedData = {...formData, [name]:value};
+        setFormData(updatedData);
+        onSearch(updatedData);
+    };
+
     return(
         <section className="search-container">
             <h1> Believe in Finding it </h1>
             <h3> Search for the property you are looking for </h3>
 
-            <form onSubmit={(e) => e.preventDefault()}>
-                <label htmlFor="term">Search Location or Postcode</label><br/>
-                <input type="text" id="term" name="term" placeholder="e. g. BR5 or London" /> <br/>
+            <form className="search-form" onSubmit={(e) => e.preventDefault()}>
+
+                {/*Search by location or postcode*/}
+                <div className="filter-group">
+                    <label>Search Location or Postcode</label><br/>
+                    <input type="text" id="term" name="term" placeholder="e. g. BR5 or London" onChange={handleChange} /> <br/>
+                </div>
+
+                {/*Search by dropdown list Home or Flat*/}
+                <div className="filter-group">
+                    <label>Property Type</label>
+                    <select name="type" onChange={handleChange}>
+                        <option value="any">Any Type</option>
+                        <option value="House">House</option>
+                        <option value="Flat">Flat</option>
+                    </select>
+                </div>
+
+                {/*Search by price range*/}
+                <div className="filter-group">
+                    <label>Price Range</label>
+                    <div className="input-row">
+                        <input type="number" name="minPrice" placeholder="Min Price" onChange={handleChange}/>
+                        <input type="number" name="maxPrice" placeholder="Max Price" onChange={handleChange} />
+                    </div>
+                </div>
 
                 <div className="filter-button">
                     <button type="button">For Sale</button>
