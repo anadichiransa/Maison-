@@ -6,6 +6,21 @@ import Gallery from "./components/Gallery";
 function App(){
   const [allProperties, setAllProperties ] = useState([]); // holds all the properties loaded from JSON
   const [filteredProperties, setFilteredProperties ] = useState([]); // holds filtered properties
+  const [favorites, setFavorites] =useState([]);
+
+  const addToFavorites =(property) => {
+
+
+    //Adding fvourites and checking for duplications
+    if(!favorites.find(fav => fav.id == property.id)){
+      setFavorites([...favorites,property]);
+    }
+    else {
+      alert("Property is already in your favorites!");
+    }
+  };
+
+  
 
   //Function to fetch data
   useEffect(() => {
