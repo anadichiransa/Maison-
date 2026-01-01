@@ -25,7 +25,12 @@ function App(){
     setFavorites(favorites.filter(fav => fav.id !== id));
   };
 
-  
+  //remove all the properties from favorites
+  const clearFavorites = () => {
+    if(window.confirm("Are you sure you want to clear all favorites?")){
+      setFavorites([]);
+    }
+  };
 
   //Function to fetch data
   useEffect(() => {
@@ -72,7 +77,13 @@ function App(){
     return (
       <main>
         <SearchBar onsearch={handleSearch}/>
-        <Gallery properties ={filteredProperties} />
+        <Gallery properties ={filteredProperties} 
+        favorites={favorites}
+        onAddToFavorites={addToFavorites}
+        onRemoveFromFavorites={removeFromFavorites}
+        onClearFavorites={clearFavorites} 
+        />
+        
       </main>
     );
   }
