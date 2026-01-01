@@ -79,7 +79,7 @@ button:hover {
   transform: translateY(-2px);
 }
 
-/* 2. Main Content Layout [cite: 329] */
+/* 2. Main Content Layout */
 .container {
   display: flex;
   width: 100%;
@@ -101,7 +101,7 @@ button:hover {
   gap: 25px;
 }
 
-/* 3. Property Card Styling [cite: 315] */
+/* 3. Property Card Styling  */
 .card {
   cursor: pointer;
   flex: 1 0 280px;
@@ -134,7 +134,7 @@ button:hover {
   margin: 15px 0 5px 0;
 }
 
-/* 4. Favorites Sidebar [cite: 328, 357] */
+/* 4. Favorites Sidebar */
 .favorites {
   width: 35%;
   padding: 25px;
@@ -149,7 +149,7 @@ button:hover {
   text-align: center;
 }
 
-/* 5. Responsive Media Queries [cite: 329, 330] */
+/* 5. Responsive Media Queries*/
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
@@ -205,6 +205,46 @@ select {
   position: relative;
 }
 
+/* Styling for the Favorites Header area */
+.fav-header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--forest);
+  padding-bottom: 10px;
+}
+
+/* Styling for the small images in the favorites list */
+.fav-thumbnail {
+  width: 60px; /* Slightly larger for better visibility */
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--cream);
+}
+
+/* Container for the text next to the thumbnail */
+.fav-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.fav-info h4 {
+  margin: 0;
+  font-size: 14px;
+  color: var(--dark-green);
+}
+
+.fav-info p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--forest);
+  font-weight: bold;
+}
+
 .delete-btn {
   background: #ff4d4d;
   color: white;
@@ -224,6 +264,39 @@ select {
   font-size: 12px;
   padding: 5px 10px;
 }
+
+/* Update this section to ensure the background is bold and visible */
+.favorites {
+  width: 35%;
+  padding: 25px;
+  background-color: var(--cream) !important; /* Forces the color to show */
+  border-radius: 25px;
+  border: 2px dashed var(--forest);
+  min-height: 400px;
+  transition: all 0.3s ease;
+}
+
+/* Ensure the delete button doesn't overlap text on small screens */
+.fav-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: var(--white);
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--sage);
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Add a hover effect to the Favorites items to show they are draggable */
+.fav-item:hover {
+  cursor: grab;
+  border-color: var(--forest);
+  background-color: var(--light-gray);
+}
+
 
 
 /* Media query for mobile screens */

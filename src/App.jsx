@@ -53,7 +53,7 @@ function App(){
         const matchLocation = prop.location.toLowerCase().includes(criteria.term.toLowerCase());
 
         //Search by Type
-        const matchType = criteria.type === "any" || prop.type === criteria.type;
+        const matchType = criteria.type === "any" || prop.type.toLowerCase() === criteria.type.toLowerCase();
 
         //Search by Price
         const minP = parseFloat(criteria.minPrice) || 0 ;
@@ -76,7 +76,7 @@ function App(){
     //Render the UI
     return (
       <main>
-        <SearchBar onsearch={handleSearch}/>
+        <SearchBar onSearch={handleSearch}/>
         <Gallery properties ={filteredProperties} 
         favorites={favorites}
         onAddToFavorites={addToFavorites}
