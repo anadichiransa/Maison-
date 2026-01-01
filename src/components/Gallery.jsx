@@ -1,6 +1,17 @@
 import React from "react";
 
-const Gallery = ({properties }) => {
+const Gallery = ({properties,favorites, onAddToFavorites,onRemoveFromFavorites, onClearFavorites }) => {
+    
+
+    //Darg in to the favourites
+    const handleDropIntoFavs =(e) => {
+        e.preventDefault();
+        const propertyId = e.dataTransfer.getData("propertyId");
+        const popertyToAdd = properties.find(p => p.id == propertyId.id);
+        if (popertyToAdd) onAddToFavorites(popertyToAdd);
+    };
+
+
     return (
         <div className="container">
             <div className="all-items">
