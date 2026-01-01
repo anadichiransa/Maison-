@@ -11,6 +11,14 @@ const Gallery = ({properties,favorites, onAddToFavorites,onRemoveFromFavorites, 
         if (popertyToAdd) onAddToFavorites(popertyToAdd);
     };
 
+    //Drag out of favorites 
+    const handleDropOutOfFavs = (e) => {
+        e.preventDefault();
+        const propertyId = e.dataTransfer.getData("propertyId");
+        onRemoveFromFavorites(propertyId);
+    };
+
+    const handleDragOver = (e) => e.preventDefault();
 
     return (
         <div className="container">
