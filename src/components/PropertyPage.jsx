@@ -86,15 +86,30 @@ const PropertyPage = ({properties}) => {
                     {activeTab === "map" && (
                         <div className="map-content">
                             <iframe
-                                title="Google Map"
-                                width="100%"
-                                height="300"
-                                src={`https://www.google.com/maps?q=${property.location}&output=embed`}>
+                                title={`Map of ${property.location}`}
+                                className="google-map-frame"
+                                src={`https://maps.google.com/maps?q=${encodeURIComponent(property.location + ", Sri Lanka")}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+                                loading="lazy"
+                                allowFullScreen
+                                >
                             </iframe>
+
+                            <div className="map-footer">
+                                <p><strong>Address: </strong> {property.location}</p>
+                                <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(property.location + ", Sri Lanka")}`} 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   className="map-link"
+                                   >
+
+                                   </a>
                         </div>
-                    )}
+                    
                 </div>
+                    )}
             </div>
+            </div>
+                    
         </div>
     );
 };
