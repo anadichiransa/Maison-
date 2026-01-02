@@ -380,6 +380,67 @@ select {
   color: var(--dark-green);
 }
 
+/* Gallery Thumbnails */
+.thumbnail-grid {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnail:hover {
+  border-color: var(--sage);
+}
+
+/* Tab Styling */
+.tabs-container {
+  margin-top: 30px;
+  background: var(--light-gray);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 10px;
+  border-bottom: 2px solid var(--cream);
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--forest);
+}
+
+.tab-btn.active {
+  color: var(--dark-green);
+  border-bottom: 4px solid var(--dark-green);
+}
+
+.tab-content {
+  padding: 10px;
+  line-height: 1.6;
+}
+
+.floorplan-img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
 
 
 

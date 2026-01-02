@@ -1,5 +1,6 @@
-import React from "react";
+
 import {useParams, useNavigate} from "react-router-dom";
+import {useState} from "react";
 
 
 const PropertyPage = ({properties}) => {
@@ -45,17 +46,17 @@ const PropertyPage = ({properties}) => {
                     <button className= {activeTab === "description" ? "tab-btn active" : "tab-btn"}
                             onClick={() => setActiveTab("description")} > Desccription</button>
 
-                    <button className={activeTab === "floorplan" ? "tab-btn-active" : "tab-btn"}
+                    <button className={activeTab === "floorplan" ? "tab-btn active" : "tab-btn"}
                             onClick={() => setActiveTab("floorplan")}>Floor Plan</button>
 
-                    <button className={activeTab === "map" ? "tab-btn-active" : "tab-btn"}
+                    <button className={activeTab === "map" ? "tab-btn active" : "tab-btn"}
                             onClick={() => setActiveTab("map")}> Map </button>
                 </div>
 
                 <div className="tab-content">
                     {activeTab === "description" && (
                         <div className="description-content">
-                            <p>{properties.longDescription || property.description}</p>
+                            <p>{property.longDescription || property.description}</p>
                             <ul>
                                 <li> Bedrooms: {property.bedrooms}</li>
                                 <li>Tenure: {property.tenure}</li>
