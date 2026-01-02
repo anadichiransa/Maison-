@@ -53,9 +53,9 @@
       "price": 45000000,
       "tenure": "Leasehold",
       "location": "Nugegoda, Colombo",
-      "picture": "images/prop4.png",
-      "images": ["images/prop4_1.png", "images/prop4_2.png"],
-      "floorplan": "images/floorplan4.png",
+      "picture": "images/P4/prop4.png",
+      "images": ["images/P4/prop4_1.png", "images/P4/prop4_2.png",  "images/P4/prop4_3.png", "images/P4/prop4_4.png", "images/P4/prop4_5.png", "images/P4/prop4_6.png"],
+      "floorplan": "images/P3/floorplan4.png",
       "description": "Convenient 2-bedroom apartment near leading schools.",
       "longDescription": "Ideally located for families, this apartment offers easy access to Nugegoda junction and leading international schools. It includes 24-hour security and dedicated parking.",
       "added": { "month": "November", "day": 20, "year": 2025 }
