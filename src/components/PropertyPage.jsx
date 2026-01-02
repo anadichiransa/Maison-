@@ -38,6 +38,21 @@ const PropertyPage = ({properties}) => {
             </div>
             
             <p className="detail-price"> Price: ${property.price.toLocaleString()}</p>
+
+            {/*React tabs*/}
+            <div className="tabs-container">
+                <div className="tab-buttons">
+                    <button className= {activeTab === "description" ? "tab-btn active" : "tab-btn"}
+                            onClick={() => setActiveTab("description")} > Desccription</button>
+
+                    <button className={activeTab === "floorplan" ? "tab-btn-active" : "tab-btn"}
+                            onClick={() => setActiveTab("floorplan")}>Floor Plan</button>
+
+                    <button className={activeTab === "map" ? "tab-btn-active" : "tab-btn"}
+                            onClick={() => setActiveTab("map")}> Map </button>
+                </div>
+
+            </div>
         </div>
     );
 };
