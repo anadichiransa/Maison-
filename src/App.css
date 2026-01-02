@@ -340,6 +340,46 @@ select {
   color: var(--cream);
 }
 
+/* Styling for the Details button on the card */
+.view-details-btn {
+  background-color: var(--white);
+  color: var(--dark-green);
+  border: 2px solid var(--dark-green);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%; /* Makes it full width inside the card description */
+  margin-bottom: 8px; /* Space between this and the Favorite button */
+  font-weight: 600;
+}
+
+.view-details-btn:hover {
+  background-color: var(--dark-green);
+  color: var(--cream);
+  transform: translateY(-2px);
+}
+
+/* Adjusting the fav-btn to look like a secondary action */
+.fav-btn {
+  background-color: var(--forest);
+  color: var(--cream);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-weight: 600;
+}
+
+.fav-btn:hover {
+  background-color: var(--sage);
+  color: var(--dark-green);
+}
+
 
 
 
