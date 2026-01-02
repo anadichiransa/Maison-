@@ -1,8 +1,9 @@
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import React,{ useState, useEffect } from "react";
 import "./App.css";
 import SearchBar from "./components/SearchBar";
 import Gallery from "./components/Gallery";
-import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+
 import PropertyPage from "./components/PropertyPage";
 
 

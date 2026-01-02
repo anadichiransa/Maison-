@@ -1,5 +1,6 @@
-import React from "react";
 import {useParams, useNavigate} from "react-router-dom";
+import React from "react";
+
 
 const PropertyPage = ({properties}) => {
     const {id} = useParams();
