@@ -27,7 +27,7 @@ const SearchBar = ({onSearch}) => {
                 {/*Search by location or postcode*/}
                 <div className="filter-group">
                     <label>Search Location or Postcode</label><br/>
-                    <input type="text" id="term" name="term" placeholder="e. g. BR5 or London" onChange={handleChange} /> <br/>
+                    <input type="text" id="term" name="term" placeholder="e. g. Colombo" onChange={handleChange} /> <br/>
                 </div>
 
                 {/*Search by dropdown list Home or Flat*/}
