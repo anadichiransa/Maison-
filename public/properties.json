@@ -1,16 +1,24 @@
 {
   "properties": [
     {
-      "id": "prop1",
-      "type": "House",
-      "bedrooms": 3,
-      "price": 750000,
-      "tenure": "Freehold",
-      "description": "Attractive three bedroom semi-detached family home...",
-      "location": "Petts Wood Road, Orpington BR5",
-      "picture": "images/prop1.png",
-      "added": { "month": "October", "day": 12, "year": 2025 }
-    },
+    "id": "prop1",
+    "type": "House",
+    "price": 750000,
+    "location": "Petts Wood Road, Orpington BR5",
+    "picture": "images/prop1.png",
+    "images": [
+        "images/prop1_1.png",
+        "images/prop1_2.png",
+        "images/prop1_3.png",
+        "images/prop1_4.png"
+    ] ,
+    "floorplan": "images/floorplan1.png",
+    "description": "Attractive three bedroom semi-detached family home...",
+    "longDescription": "This stunning property features a spacious living area, a modern kitchen with integrated appliances, and a beautiful south-facing garden. Ideally located near Petts Wood station...",
+    "bedrooms": 3,
+    "tenure": "Freehold",
+    "added": { "month": "October", "day": 12, "year": 2025 }
+},
     {
       "id": "prop2",
       "type": "Flat",
@@ -20,6 +28,14 @@
       "description": "Modern two bedroom garden flat...",
       "location": "Crofton Road, Orpington BR6",
       "picture": "images/prop2.png",
+      "images" :[
+        "images/prop1_1.png",
+        "images/prop1_2.png",
+        "images/prop1_3.png",
+        "images/prop1_4.png"
+      ],
+      "floorplan" : "images/floorplan1.png",
+      "longDescription": "This stunning property features a spacious living area, a modern kitchen with integrated appliances, and a beautiful south-facing garden. Ideally located near Petts Wood station...",
       "added": { "month": "September", "day": 14, "year": 2025 }
     },
     {
