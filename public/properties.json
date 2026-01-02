@@ -23,11 +23,11 @@
       "price":85000000 ,
       "tenure": "Freehold",
       "location": "Gregory's Road, Colombo 07",
-      "picture": "images/prop2.png",
+      "picture": "images/P2/prop2.png",
       "images": [
-        "images/prop2_1.png", "images/prop2_2.png", "images/prop2_3.png", "images/prop2_4.png"
+        "images/P2/prop2_1.png", "images/P2/prop2_2.png", "images/P2/prop2_3.png", "images/P2/prop2_4.png","images/P2/prop2_5.png","images/P2/prop2_6.png","images/P2/prop2_7.png"
       ],
-      "floorplan": "images/floorplan2.png",
+      "floorplan": "images/P2/floorplan2.png",
       "description": " Luxury 4-bedroom colonial-style villa in Cinnamon Gardens.",
       "longDescription": "Located in the most prestigious neighborhood in Colombo, this colonial villa offers sprawling living areas, high teak ceilings, and a private swimming pool. Perfect for diplomatic or executive residency.",
       "added": { "month": "January", "day": 2, "year": 2026 }
@@ -39,9 +39,9 @@
       "price": 65000000,
       "tenure": "Freehold",
       "location": "Pelawatta, Battaramulla",
-      "picture": "images/prop3.png",
-      "images": ["images/prop3_1.png", "images/prop3_2.png"],
-      "floorplan": "images/floorplan3.png",
+      "picture": "images/P3/prop3.png",
+      "images": ["images/P3/prop3_1.png", "images/P3/prop3_2.png", "images/P3/prop3_3.png" , "images/P3/prop3_4.png" , "images/P3/prop3_5.png","images/P3/prop3_6.png","images/P3/prop3_7.png" ],
+      "floorplan": "images/P3/floorplan3.png",
       "description": "Modern 5-bedroom architect-designed house.",
       "longDescription": "A beautiful contemporary home situated in a quiet residential area. Features an open-concept design, large rooftop terrace, and a landscaped garden.",
       "added": { "month": "December", "day": 15, "year": 2025 }
