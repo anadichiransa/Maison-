@@ -297,6 +297,50 @@ select {
   background-color: var(--light-gray);
 }
 
+/* Property Page Container */
+.property-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--white);
+}
+
+/* Main Image on Detail Page */
+.detail-main-image {
+  width: 100%;
+  max-width: 800px; /* Increased size for detail view */
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(31, 61, 43, 0.15);
+  display: block;
+  margin: 20px 0;
+}
+
+/* Pricing and Title Styling */
+.detail-price {
+  font-size: 2rem;
+  color: var(--forest);
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.back-btn {
+  background-color: var(--sage);
+  color: var(--dark-green);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background-color: var(--forest);
+  color: var(--cream);
+}
+
+
 
 
 /* Media query for mobile screens */
