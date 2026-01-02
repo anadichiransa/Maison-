@@ -52,6 +52,17 @@ const PropertyPage = ({properties}) => {
                             onClick={() => setActiveTab("map")}> Map </button>
                 </div>
 
+                <div className="tab-content">
+                    {activeTab === "description" && (
+                        <div className="description-content">
+                            <p>{properties.longDescription || property.description}</p>
+                            <ul>
+                                <li> Bedrooms: {property.bedrooms}</li>
+                                <li>Tenure: {property.tenure}</li>
+                            </ul>
+                        </div>
+                    )}
+
             </div>
         </div>
     );
