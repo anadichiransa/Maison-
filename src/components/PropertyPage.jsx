@@ -10,5 +10,14 @@ const PropertyPage = ({properties}) => {
 
     if(!property) return <h2> Property not found!!</h2>
 
-    
+    return(
+        <div className="property-page">
+            <button className="back-btn" onClick={() => navigate(-1)}> ← Back To Search </button>
+            <h1> {property.type} in {property.location} </h1>
+            <img src={`/${property.picture}`} alt= {property.type} className="detail-main-image"/>
+            <p className="detail-price"> Price: ${property.price.toLocaleString()}</p>
+        </div>
+    );
 };
+
+export default PropertyPage;
