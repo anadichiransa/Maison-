@@ -2,6 +2,9 @@ import React,{ useState, useEffect } from "react";
 import "./App.css";
 import SearchBar from "./components/SearchBar";
 import Gallery from "./components/Gallery";
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import PropertyPage from "./components/PropertyPage";
+
 
 function App(){
   const [allProperties, setAllProperties ] = useState([]); // holds all the properties loaded from JSON
@@ -75,16 +78,29 @@ function App(){
 
     //Render the UI
     return (
+      <Router>
       <main>
-        <SearchBar onSearch={handleSearch}/>
-        <Gallery properties ={filteredProperties} 
-        favorites={favorites}
-        onAddToFavorites={addToFavorites}
-        onRemoveFromFavorites={removeFromFavorites}
-        onClearFavorites={clearFavorites} 
-        />
+        <Routes>
+
+          {/*Home Route*/}
+          <Route path="/" element={
+            <>
+            <SearchBar onSearch={handleSearch}/>
+            <Gallery properties ={filteredProperties} 
+                    favorites={favorites}
+                    onAddToFavorites={addToFavorites}
+                    onRemoveFromFavorites={removeFromFavorites}
+                    onClearFavorites={clearFavorites} 
+            />
+            </>
+          }/>
+
+          {/*Detailed route in single property page*/}
+          <Route path="/property/:id" element={<PropertyPage properties={allProperties} />} />
         
+        </Routes>
       </main>
+      </Router>
     );
   }
 
