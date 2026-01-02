@@ -1,97 +1,106 @@
 {
   "properties": [
     {
-    "id": "prop1",
-    "type": "House",
-    "price": 750000,
-    "location": "Petts Wood Road, Orpington BR5",
-    "picture": "images/prop1.png",
-    "images": [
-        "images/prop1_1.png",
-        "images/prop1_2.png",
-        "images/prop1_3.png",
-        "images/prop1_4.png"
-    ] ,
-    "floorplan": "images/floorplan1.png",
-    "description": "Attractive three bedroom semi-detached family home...",
-    "longDescription": "This stunning property features a spacious living area, a modern kitchen with integrated appliances, and a beautiful south-facing garden. Ideally located near Petts Wood station...",
-    "bedrooms": 3,
-    "tenure": "Freehold",
-    "added": { "month": "October", "day": 12, "year": 2025 }
-},
+      "id": "prop1",
+      "type": "Flat",
+      "bedrooms": 3,
+      "price": 120000000,
+      "tenure": "Freehold",
+      "location": "Galle Face Terrace, Colombo 03",
+      "picture": "images/prop1.png",
+      "images": [
+        "images/prop1_1.png", "images/prop1_2.png", "images/prop1_3.png", "images/prop1_4.png","images/prop1_5.png","images/prop1_6.png","images/prop1_7.png"
+      ],
+      "floorplan": "images/floorplan1.png",
+      "description": "Premium 3-bedroom apartment with ocean views.",
+      "longDescription": "Experience luxury living at its finest with this high-floor apartment overlooking the Indian Ocean. Features include a fully fitted modern kitchen, maid's quarters, and access to an infinity pool and gym.",
+      "added": { "month": "January", "day": 12, "year": 2026 }
+    },
     {
       "id": "prop2",
-      "type": "Flat",
-      "bedrooms": 2,
-      "price": 399995,
-      "tenure": "Leasehold",
-      "description": "Modern two bedroom garden flat...",
-      "location": "Crofton Road, Orpington BR6",
+      "type": "House",
+      "bedrooms": 4,
+      "price":85000000 ,
+      "tenure": "Freehold",
+      "location": "Gregory's Road, Colombo 07",
       "picture": "images/prop2.png",
-      "images" :[
-        "images/prop1_1.png",
-        "images/prop1_2.png",
-        "images/prop1_3.png",
-        "images/prop1_4.png"
+      "images": [
+        "images/prop2_1.png", "images/prop2_2.png", "images/prop2_3.png", "images/prop2_4.png"
       ],
-      "floorplan" : "images/floorplan1.png",
-      "longDescription": "This stunning property features a spacious living area, a modern kitchen with integrated appliances, and a beautiful south-facing garden. Ideally located near Petts Wood station...",
-      "added": { "month": "September", "day": 14, "year": 2025 }
+      "floorplan": "images/floorplan2.png",
+      "description": " Luxury 4-bedroom colonial-style villa in Cinnamon Gardens.",
+      "longDescription": "Located in the most prestigious neighborhood in Colombo, this colonial villa offers sprawling living areas, high teak ceilings, and a private swimming pool. Perfect for diplomatic or executive residency.",
+      "added": { "month": "January", "day": 2, "year": 2026 }
     },
     {
       "id": "prop3",
       "type": "House",
       "bedrooms": 5,
-      "price": 1200000,
+      "price": 65000000,
       "tenure": "Freehold",
-      "description": "Luxury 5-bedroom detached villa with spacious garden...",
-      "location": "High Street, NW1",
+      "location": "Pelawatta, Battaramulla",
       "picture": "images/prop3.png",
-      "added": { "month": "January", "day": 5, "year": 2024 }
+      "images": ["images/prop3_1.png", "images/prop3_2.png"],
+      "floorplan": "images/floorplan3.png",
+      "description": "Modern 5-bedroom architect-designed house.",
+      "longDescription": "A beautiful contemporary home situated in a quiet residential area. Features an open-concept design, large rooftop terrace, and a landscaped garden.",
+      "added": { "month": "December", "day": 15, "year": 2025 }
     },
     {
       "id": "prop4",
       "type": "Flat",
-      "bedrooms": 1,
-      "price": 250000,
+      "bedrooms": 2,
+      "price": 45000000,
       "tenure": "Leasehold",
-      "description": "Cozy studio flat perfect for first-time buyers...",
-      "location": "Station Road, BR1",
+      "location": "Nugegoda, Colombo",
       "picture": "images/prop4.png",
-      "added": { "month": "December", "day": 20, "year": 2025 }
+      "images": ["images/prop4_1.png", "images/prop4_2.png"],
+      "floorplan": "images/floorplan4.png",
+      "description": "Convenient 2-bedroom apartment near leading schools.",
+      "longDescription": "Ideally located for families, this apartment offers easy access to Nugegoda junction and leading international schools. It includes 24-hour security and dedicated parking.",
+      "added": { "month": "November", "day": 20, "year": 2025 }
     },
     {
       "id": "prop5",
       "type": "House",
-      "bedrooms": 4,
-      "price": 850000,
+      "bedrooms": 3,
+      "price": 35000000,
       "tenure": "Freehold",
-      "description": "Period property with original features...",
-      "location": "Green Lane, SE10",
+      "location": "Heerassagala, Kandy",
       "picture": "images/prop5.png",
-      "added": { "month": "March", "day": 10, "year": 2025 }
+      "images": ["images/prop5_1.png", "images/prop5_2.png"],
+      "floorplan": "images/floorplan5.png",
+      "description": "Charming 3-bedroom hillside bungalow.",
+      "longDescription": "A serene retreat with breathtaking views of the Kandy mountains. This property features traditional Kandyan architecture and a cool, misty climate year-round.",
+      "added": { "month": "October", "day": 5, "year": 2025 }
     },
     {
       "id": "prop6",
       "type": "Flat",
-      "bedrooms": 3,
-      "price": 600000,
+      "bedrooms": 1,
+      "price": 28000000,
       "tenure": "Leasehold",
-      "description": "Spacious penthouse with city views...",
-      "location": "Park Lane, W1",
+      "location": "Marine Drive, Wellawatte",
       "picture": "images/prop6.png",
-      "added": { "month": "June", "day": 15, "year": 2025 }
+      "images": ["images/prop6_1.png", "images/prop6_2.png"],
+      "floorplan": "images/floorplan6.png",
+      "description": "Modern studio apartment on the coast.",
+      "longDescription": "Perfect for young professionals, this studio offers stunning sunset views and is within walking distance of public transport and shopping malls.",
+      "added": { "month": "September", "day": 28, "year": 2025 }
     },
     {
       "id": "prop7",
       "type": "House",
-      "bedrooms": 2,
-      "price": 450000,
+      "bedrooms": 4,
+      "price": 55000000,
       "tenure": "Freehold",
-      "description": "Charming cottage in a quiet cul-de-sac...",
-      "location": "Oak Avenue, BR3",
+      "location": "Galle Fort, Galle",
       "picture": "images/prop7.png",
-      "added": { "month": "August", "day": 2, "year": 2025 }
+      "images": ["images/prop7_1.png", "images/prop7_2.png"],
+      "floorplan": "images/floorplan7.png",
+      "description": "Heritage 4-bedroom house inside the Fort.",
+      "longDescription": "Own a piece of history with this beautifully restored Dutch-period home located within the UNESCO World Heritage Site of Galle Fort. Features a central courtyard and original stone walls.",
+      "added": { "month": "August", "day": 14, "year": 2025 }
     }
   ]
 }
