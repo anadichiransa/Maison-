@@ -63,6 +63,23 @@ const PropertyPage = ({properties}) => {
                         </div>
                     )}
 
+                    {activeTab === "floorplan" && (
+                        <div className ="floorplan-content">
+                            <img src={`/${property.floorplan}`} alt="Floor plan" className ="floorplan-img"/>
+                        </div>
+                    )}
+
+                    {activeTab === "map" && (
+                        <div className="map-content">
+                            <iframe
+                                title="Google Map"
+                                width="100%"
+                                height="300"
+                                src={`https://www.google.com/maps?q=${property.location}&output=embed`}>
+                            </iframe>
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
     );
