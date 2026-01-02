@@ -10,8 +10,11 @@ const PropertyPage = ({properties}) => {
     //Sate for tabs
     const [activeTab, setActiveTab] = useState("description");
 
-    //Finding the property using the Id from the URL 
+    //Finding specific property from the array
     const property = properties.find(p => p.id === id);
+
+    //State for main images 
+    const [mainImage,setMainImage] = useState(property?.picture);
 
     if(!property) return <h2> Property not found!!</h2>
 
@@ -23,16 +26,26 @@ const PropertyPage = ({properties}) => {
             {/*main gallert section*/}
             <div className="gallery-container">
                 <div className="main-image-view">
-                    <img src={`/${property.picture}`} alt= {property.type} className="detail-main-image"/>
+                    <img src={`/${mainImage}`} alt= {property.type} className="detail-main-image"/>
                 </div>
 
                 {/*Thumbanails for extra images*/}
                 <div className="thumbnail-grid">
+
+                    {/*Main picture as first thumbnail*/}
+                    <img src={`/${property.picture}`} 
+                         className={mainImage === property.picture? "thumbnail active-thumb" : "thumbnail"}
+                         onClick={() => setMainImage(property.picture)}
+                         alt="main view"
+                    />
+
+                    {/*extra images thumbanails*/}
                     {property.images && property.images.map((img,index) =>(
                         <img key = {index}
                             src ={`/${img}`}
                             alt={`view${index}`}
-                            className="thumbnail"
+                            className={mainImage === img ? "thumbnail active-thumb" : "thumbnail"}
+                            onClick={() => setMainImage(img)}
                             />
                     ))}
                 </div>
