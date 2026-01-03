@@ -516,3 +516,70 @@ select {
 
 	
 }
+
+input[type="text"], input[type="number"], select {
+  border: 2px solid var(--sage);
+  border-radius: 12px;
+  padding: 12px;
+  width: 100%; /* Change from 300px to 100% */
+  max-width: 400px; /* Keeps it from getting too long on desktop */
+  box-sizing: border-box;
+}
+
+/* Adjust the input rows (Min/Max Price) */
+.input-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.input-row input {
+  width: 50% !important; /* Ensures they sit side-by-side on any screen */
+}
+
+.tab-content {
+  padding: 20px;
+  background: white;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden; /* Prevents large floorplans from breaking the layout */
+}
+
+.floorplan-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* Ensure the Tab Container stays within mobile screen bounds */
+.tabs-container {
+  width: 100%;
+  max-width: 100%;
+  padding: 15px;
+  overflow: hidden; /* Prevents horizontal page break */
+}
+
+/* Force Google Map to fit on tiny screens */
+.google-map-frame {
+  width: 100% !important;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Maintains shape */
+  min-height: 250px; 
+}
+
+/* Make Floorplan images responsive */
+.tab-content img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Mobile Tab Scrollability */
+.tab-buttons {
+  display: flex;
+  overflow-x: auto; /* Allows swiping tabs on phone */
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}

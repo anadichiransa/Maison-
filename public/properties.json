@@ -1,23 +1,21 @@
 {
   "properties": [
-    {
+        {
       "id": "prop1",
-      "type": "Flat",
+      "type": "House",
       "bedrooms": 3,
-      "price": 120000000,
+      "price": 35000000,
       "tenure": "Freehold",
-      "location": "Galle Face Terrace, Colombo 03",
-      "postcode": "CB3",
-      "picture": "images/prop1.png",
-      "images": [
-        "images/prop1_1.png", "images/prop1_2.png", "images/prop1_3.png", 
-        "images/prop1_4.png", "images/prop1_5.png", "images/prop1_6.png", "images/prop1_7.png"
-      ],
-      "floorplan": "images/floorplan1.png",
-      "description": "Premium 3-bedroom apartment with ocean views.",
-      "longDescription": "Experience luxury living at its finest with this high-floor apartment overlooking the Indian Ocean. Features include a fully fitted modern kitchen, maid's quarters, and access to an infinity pool and gym.",
-      "added": { "month": "January", "day": 12, "year": 2026 }
-    },
+      "location": "Heerassagala, Kandy",
+      "postcode": "KY2",
+      "picture": "images/P1/prop1.png",
+      "images": ["images/P1/prop1_1.png", "images/P1/prop1_2.png", "images/P1/prop1_3.png", "images/P1/prop1_4.png", "images/P1/prop1_5.png", "images/P1/prop1_6.png"],
+      "floorplan": "images/P1/floorplan1.png",
+      "description": "Charming 3-bedroom hillside bungalow.",
+      "longDescription": "A serene retreat with breathtaking views of the Kandy mountains. This property features traditional Kandyan architecture.",
+      "added": { "month": "October", "day": 5, "year": 2025 }
+    }
+,
     {
       "id": "prop2",
       "type": "House",
@@ -61,26 +59,30 @@
       "postcode": "NG5",
       "picture": "images/P4/prop4.png",
       "images": ["images/P4/prop4_1.png", "images/P4/prop4_2.png", "images/P4/prop4_3.png", "images/P4/prop4_4.png", "images/P4/prop4_5.png", "images/P4/prop4_6.png"],
-      "floorplan": "images/P3/floorplan4.png",
+      "floorplan": "images/P4/floorplan4.png",
       "description": "Convenient 2-bedroom apartment near leading schools.",
       "longDescription": "Ideally located for families, this apartment offers easy access to Nugegoda junction and leading international schools.",
       "added": { "month": "November", "day": 20, "year": 2025 }
     },
-    {
+        {
       "id": "prop5",
-      "type": "House",
+      "type": "Flat",
       "bedrooms": 3,
-      "price": 35000000,
+      "price": 120000000,
       "tenure": "Freehold",
-      "location": "Heerassagala, Kandy",
-      "postcode": "KY2",
-      "picture": "images/prop5.png",
-      "images": ["images/prop5_1.png", "images/prop5_2.png", "images/prop5_3.png", "images/prop5_4.png", "images/prop5_5.png", "images/prop5_6.png"],
+      "location": "Galle Face Terrace, Colombo 03",
+      "postcode": "CB3",
+      "picture": "images/P5/prop5.png",
+      "images": [
+        "images/P5/prop5_1.png", "images/P5/prop5_2.png", "images/P5/prop5_3.png", 
+        "images/P5/prop5_4.png", "images/P5/prop5_5.png", "images/P5/prop5_6.png"
+      ],
       "floorplan": "images/floorplan5.png",
-      "description": "Charming 3-bedroom hillside bungalow.",
-      "longDescription": "A serene retreat with breathtaking views of the Kandy mountains. This property features traditional Kandyan architecture.",
-      "added": { "month": "October", "day": 5, "year": 2025 }
-    },
+      "description": "Premium 3-bedroom apartment with ocean views.",
+      "longDescription": "Experience luxury living at its finest with this high-floor apartment overlooking the Indian Ocean. Features include a fully fitted modern kitchen, maid's quarters, and access to an infinity pool and gym.",
+      "added": { "month": "January", "day": 12, "year": 2026 }
+    }
+,
     {
       "id": "prop6",
       "type": "Flat",
@@ -89,9 +91,9 @@
       "tenure": "Leasehold",
       "location": "Marine Drive, Wellawatte",
       "postcode": "CB6",
-      "picture": "images/prop6.png",
-      "images": ["images/prop6_1.png", "images/prop6_2.png", "images/prop6_3.png", "images/prop6_4.png", "images/prop6_5.png", "images/prop6_6.png"],
-      "floorplan": "images/floorplan6.png",
+      "picture": "images/P6/prop6.png",
+      "images": ["images/P6/prop6_1.png", "images/P6/prop6_2.png", "images/P6/prop6_3.png", "images/P6/prop6_4.png", "images/P6/prop6_5.png", "images/P6/prop6_7.png"],
+      "floorplan": "images/P6/floorplan6.png",
       "description": "Modern studio apartment on the coast.",
       "longDescription": "Perfect for young professionals, this studio offers stunning sunset views and is within walking distance of public transport.",
       "added": { "month": "September", "day": 28, "year": 2025 }
@@ -104,9 +106,9 @@
       "tenure": "Freehold",
       "location": "Galle Fort, Galle",
       "postcode": "GL1",
-      "picture": "images/prop7.png",
-      "images": ["images/prop7_1.png", "images/prop7_2.png", "images/prop7_3.png", "images/prop7_4.png", "images/prop7_5.png", "images/prop7_6.png"],
-      "floorplan": "images/floorplan7.png",
+      "picture": "images/P7/prop7.png",
+      "images": ["images/P7/prop7_1.png", "images/P7/prop7_2.png", "images/P7/prop7_3.png", "images/P7/prop7_4.png", "images/P7/prop7_5.png", "images/P7/prop7_6.png"],
+      "floorplan": "images/P7/floorplan7.png",
       "description": "Heritage 4-bedroom house inside the Fort.",
       "longDescription": "Own a piece of history with this beautifully restored Dutch-period home located within the UNESCO World Heritage Site of Galle Fort.",
       "added": { "month": "August", "day": 14, "year": 2025 }
