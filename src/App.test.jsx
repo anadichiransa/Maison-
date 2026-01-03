@@ -49,6 +49,16 @@ it("filters properties based on minimum price input" ,() => {
     });
 });
 
+//Test 03: Adding to Favorite section
+it("Adds property to favorites section once clicked on button", async () => {
+    const addButtons = await screen.findAllByText(/Add to the Favorites/i);
+    fireEvent.click(addButtons[0]);
+
+    const favHeading = screen.getByRole("heading", {name : /Favorites/i, level: 2 });
+    const favSection = favHeading.closest("div");
+
+    expect(favSection).toHaveTextContent(/Colombo/i);
+
 
 
 
