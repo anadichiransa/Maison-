@@ -1,5 +1,5 @@
 import {render, screen, fireEvent ,cleanup} from "@testing-library/react";
-import { describe, it, expect, beforeEach} from "vitest";
+import { describe, it, expect, beforeEach, vi} from "vitest";
 import App from "./App";
 import "@testing-library/jest-dom";
 
@@ -19,23 +19,23 @@ describe("Maison Function Testing" , () => {
 
 
 beforeEach(() => {
-    render(<App/>);;
+    render(<App/>);
 });
 
 //Test 01: Search Filters by the entered text
-it("filters properties correctly when a location is typed" ,() => {
-    const searchInput = screen.getByPlaceholderText(/e. g. BR5 or London/i);
+it("filters properties correctly when a location is typed" ,  async() => {
+    const searchInput = screen.getByPlaceholderText(/e. g. Colombo/i);
     fireEvent.change(searchInput, { target: {value:"Colombo"} });
 
     //After typing Colombo, Only Colombo properties should remain
-    const propertyCards = screen.queryAllByRole("heading", {level:3});
+    const propertyCards = await screen.findAllByRole("heading", {level:3});
     propertyCards.forEach(card => {
         expect(card.textContent).not.toMatch(/Kandy/i);
     });
 });
 
 //Test 02 : Price filters accordingly
-it("filters properties based on minimum price input" ,() => {
+it("filters properties based on minimum price input" , async () => {
     const minPriceInput = screen.getByPlaceholderText(/Min Price/i);
 
     //Setting hign min price which will hide the cheap properties
@@ -51,38 +51,40 @@ it("filters properties based on minimum price input" ,() => {
 
 //Test 03: Adding to Favorite section
 it("Adds property to favorites section once clicked on button", async () => {
-    const addButtons = await screen.findAllByText(/Add to the Favorites/i);
+    const addButtons = await screen.findAllByText(/Add to the Fav/i);
     fireEvent.click(addButtons[0]);
 
     const favHeading = screen.getByRole("heading", {name : /Favorites/i, level: 2 });
     const favSection = favHeading.closest("div");
 
     expect(favSection).toHaveTextContent(/Colombo/i);
+});
 
 //Test 04: Prevents adding duplications
 it("Prevents adding the same property to facorites section twice", () => {
     window.alert = vi.fn();
 
-    const addButtons = screen.getAllByText(/Add to the Favourites/i);
+    const addButtons = screen.getAllByText(/Add to the Fav/i);
     fireEvent.click(addButtons[0]);
     fireEvent.click(addButtons[0]);
 
     expect(window.alert).toHaveBeenCalledWith("Property is already in your favorites!");
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Test 05:Clear all favorites
+it("Clears all favorites once 'Clear All' button is clicked", () => {
     
+    //Add an item
+    const addButtons = screen.getAllByText(/Add to the Favourites/i);
+    fireEvent.click(addButtons[0]);
+
+    //Mock confirmation dialog
+    window.confirm = vi.fn(() =>  true);
+
+    //Click Clear All
+    const clearButton = screen.getByText(/Clear All/i);
+    fireEvent.click(clearButton);
+
+    expect(screen.getByText(/Drag properties here to save them!/i)).toBeInTheDocument();
+});
+});
