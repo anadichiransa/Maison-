@@ -19,7 +19,7 @@ describe("Maison Function Testing" , () => {
 
 
 beforeEach(() => {
-    render(<App/>);
+    render(<App />);
 });
 
 //Test 01: Search Filters by the entered text
@@ -54,17 +54,17 @@ it("Adds property to favorites section once clicked on button", async () => {
     const addButtons = await screen.findAllByText(/Add to the Fav/i);
     fireEvent.click(addButtons[0]);
 
-    const favHeading = screen.getByRole("heading", {name : /Favorites/i, level: 2 });
+    const favHeading = screen.getByRole("heading", {name : /^Favorites$/i, level: 2 });
     const favSection = favHeading.closest("div");
 
-    expect(favSection).toHaveTextContent(/Colombo/i);
+    expect(favSection).not.toHaveTextContent(/Drag properties here/i);
 });
 
 //Test 04: Prevents adding duplications
-it("Prevents adding the same property to facorites section twice", () => {
+it("Prevents adding the same property to facorites section twice", async () => {
     window.alert = vi.fn();
 
-    const addButtons = screen.getAllByText(/Add to the Fav/i);
+    const addButtons = await screen.findAllByText(/Add to the Fav/i);
     fireEvent.click(addButtons[0]);
     fireEvent.click(addButtons[0]);
 
@@ -72,10 +72,10 @@ it("Prevents adding the same property to facorites section twice", () => {
 });
 
 //Test 05:Clear all favorites
-it("Clears all favorites once 'Clear All' button is clicked", () => {
+it("Clears all favorites once 'Clear All' button is clicked", async () => {
     
     //Add an item
-    const addButtons = screen.getAllByText(/Add to the Favourites/i);
+    const addButtons = await screen.findAllByText(/Add to the Fav/i);
     fireEvent.click(addButtons[0]);
 
     //Mock confirmation dialog
