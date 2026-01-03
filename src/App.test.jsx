@@ -6,7 +6,7 @@ import "@testing-library/jest-dom";
 describe("Maison Function Testing" , () => {
 
     //block "mocks" the fetch call to avoid the URL error
-    global.fetch = vi.fn() =>
+    global.fetch = vi.fn(() =>
         Promise.resolve({
             json:() => Promise.resolve({
                 properties: [
@@ -17,7 +17,30 @@ describe("Maison Function Testing" , () => {
         })
     );
 
-    
+
+beforeEach(() => {
+    render(<App/>);;
+});
+
+//Test 01: Search Filters by the entered text
+it("filters properties correctly when a location is typed" ,() => {
+    const searchInput = screen.getByPlaceholderText(/e. g. BR5 or London/i);
+    fireEvent.change(searchInput, { target: {value:"Colombo"} });
+
+    //After typing Colombo, Only Colombo properties should remain
+    const propertyCards = screen.queryAllByRole("heading", {level:3});
+    propertyCards.forEach(card => {
+        expect(card.textContent).not.toMatch(/Kandy/i);
+    });
+});
+
+
+
+
+
+
+
+
 
 
     
