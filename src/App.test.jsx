@@ -59,6 +59,19 @@ it("Adds property to favorites section once clicked on button", async () => {
 
     expect(favSection).toHaveTextContent(/Colombo/i);
 
+//Test 04: Prevents adding duplications
+it("Prevents adding the same property to facorites section twice", () => {
+    window.alert = vi.fn();
+
+    const addButtons = screen.getAllByText(/Add to the Favourites/i);
+    fireEvent.click(addButtons[0]);
+    fireEvent.click(addButtons[0]);
+
+    expect(window.alert).toHaveBeenCalledWith("Property is already in your favorites!");
+});
+
+
+
 
 
 
