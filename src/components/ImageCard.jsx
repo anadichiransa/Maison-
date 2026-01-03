@@ -31,7 +31,7 @@ const ImageCard =({product, onAddToFavorites }) => {
                 <p><strong>Added: </strong>{added.month} {added.day}, {added.year}</p>
 
                 {/*Favourite section button*/}
-                <button className="fav-btn" onClick={() => onAddToFavorites(product)}> Add to the Favourites </button>
+                <button className="fav-btn" onClick={() => onAddToFavorites(product)}> Add to the Favorites </button>
             </div>
         </section>
     );
