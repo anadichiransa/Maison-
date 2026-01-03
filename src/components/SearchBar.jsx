@@ -10,9 +10,15 @@ const SearchBar = ({onSearch}) => {
         maxBedrooms:" "
     });
 
+    const sanitizeInput = (text) => {
+        return typeof text === "string" ? text.replace(/<[^>]*>?/gm, '') : text;
+    };
+
     const handleChange = (e) => {
         const {name, value} = e.target;
-        const updatedData = {...formData, [name]:value};
+
+        const safeValue = name === "term" ? sanitizeInput(value) : value;
+        const updatedData = {...formData, [name]:safeValue};
         setFormData(updatedData);
         onSearch(updatedData);
     };
