@@ -52,9 +52,13 @@ function App(){
     //Fucntion to handle data input
     const handleSearch = (criteria) => {
       const filtered = allProperties.filter(prop => {
+        const cleanTerm = criteria.term.replace(/<[^>]*>?/gm, '');
+        const searchTerm = cleanTerm.toLowerCase().trim();
 
         //Search by Location
-        const matchLocation = prop.location.toLowerCase().includes(criteria.term.toLowerCase());
+        const matchLocation = prop.location.toLowerCase().includes(criteria.term.toLowerCase()); 
+        const matchesPostcode = prop.postcode ? prop.postcode.toLowerCase().includes(searchTerm) : false;
+        const matchText = matchLocation || matchesPostcode;
 
         //Search by Type
         const matchType = criteria.type === "any" || prop.type.toLowerCase() === criteria.type.toLowerCase();
@@ -70,7 +74,7 @@ function App(){
         const matchBedrooms = prop.bedrooms >= minB && prop.bedrooms <= maxB;
 
         //return the properties that match the conditions
-        return matchLocation && matchType && matchPrice && matchBedrooms;
+        return  matchType && matchPrice && matchBedrooms && matchText;
 
     });
 

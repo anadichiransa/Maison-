@@ -7,9 +7,11 @@
       "price": 120000000,
       "tenure": "Freehold",
       "location": "Galle Face Terrace, Colombo 03",
+      "postcode": "CB3",
       "picture": "images/prop1.png",
       "images": [
-        "images/prop1_1.png", "images/prop1_2.png", "images/prop1_3.png", "images/prop1_4.png","images/prop1_5.png","images/prop1_6.png","images/prop1_7.png"
+        "images/prop1_1.png", "images/prop1_2.png", "images/prop1_3.png", 
+        "images/prop1_4.png", "images/prop1_5.png", "images/prop1_6.png", "images/prop1_7.png"
       ],
       "floorplan": "images/floorplan1.png",
       "description": "Premium 3-bedroom apartment with ocean views.",
@@ -20,16 +22,18 @@
       "id": "prop2",
       "type": "House",
       "bedrooms": 4,
-      "price":85000000 ,
+      "price": 85000000,
       "tenure": "Freehold",
       "location": "Gregory's Road, Colombo 07",
+      "postcode": "CB7",
       "picture": "images/P2/prop2.png",
       "images": [
-        "images/P2/prop2_1.png", "images/P2/prop2_2.png", "images/P2/prop2_3.png", "images/P2/prop2_4.png","images/P2/prop2_5.png","images/P2/prop2_6.png","images/P2/prop2_7.png"
+        "images/P2/prop2_1.png", "images/P2/prop2_2.png", "images/P2/prop2_3.png", 
+        "images/P2/prop2_4.png", "images/P2/prop2_5.png", "images/P2/prop2_6.png", "images/P2/prop2_7.png"
       ],
       "floorplan": "images/P2/floorplan2.png",
-      "description": " Luxury 4-bedroom colonial-style villa in Cinnamon Gardens.",
-      "longDescription": "Located in the most prestigious neighborhood in Colombo, this colonial villa offers sprawling living areas, high teak ceilings, and a private swimming pool. Perfect for diplomatic or executive residency.",
+      "description": "Luxury 4-bedroom colonial-style villa in Cinnamon Gardens.",
+      "longDescription": "Located in the most prestigious neighborhood in Colombo, this colonial villa offers sprawling living areas, high teak ceilings, and a private swimming pool.",
       "added": { "month": "January", "day": 2, "year": 2026 }
     },
     {
@@ -39,8 +43,9 @@
       "price": 65000000,
       "tenure": "Freehold",
       "location": "Pelawatta, Battaramulla",
+      "postcode": "BT1",
       "picture": "images/P3/prop3.png",
-      "images": ["images/P3/prop3_1.png", "images/P3/prop3_2.png", "images/P3/prop3_3.png" , "images/P3/prop3_4.png" , "images/P3/prop3_5.png","images/P3/prop3_6.png","images/P3/prop3_7.png" ],
+      "images": ["images/P3/prop3_1.png", "images/P3/prop3_2.png", "images/P3/prop3_3.png", "images/P3/prop3_4.png", "images/P3/prop3_5.png", "images/P3/prop3_6.png", "images/P3/prop3_7.png"],
       "floorplan": "images/P3/floorplan3.png",
       "description": "Modern 5-bedroom architect-designed house.",
       "longDescription": "A beautiful contemporary home situated in a quiet residential area. Features an open-concept design, large rooftop terrace, and a landscaped garden.",
@@ -53,11 +58,12 @@
       "price": 45000000,
       "tenure": "Leasehold",
       "location": "Nugegoda, Colombo",
+      "postcode": "NG5",
       "picture": "images/P4/prop4.png",
-      "images": ["images/P4/prop4_1.png", "images/P4/prop4_2.png",  "images/P4/prop4_3.png", "images/P4/prop4_4.png", "images/P4/prop4_5.png", "images/P4/prop4_6.png"],
+      "images": ["images/P4/prop4_1.png", "images/P4/prop4_2.png", "images/P4/prop4_3.png", "images/P4/prop4_4.png", "images/P4/prop4_5.png", "images/P4/prop4_6.png"],
       "floorplan": "images/P3/floorplan4.png",
       "description": "Convenient 2-bedroom apartment near leading schools.",
-      "longDescription": "Ideally located for families, this apartment offers easy access to Nugegoda junction and leading international schools. It includes 24-hour security and dedicated parking.",
+      "longDescription": "Ideally located for families, this apartment offers easy access to Nugegoda junction and leading international schools.",
       "added": { "month": "November", "day": 20, "year": 2025 }
     },
     {
@@ -67,11 +73,12 @@
       "price": 35000000,
       "tenure": "Freehold",
       "location": "Heerassagala, Kandy",
+      "postcode": "KY2",
       "picture": "images/prop5.png",
-      "images": ["images/prop5_1.png", "images/prop5_2.png"],
+      "images": ["images/prop5_1.png", "images/prop5_2.png", "images/prop5_3.png", "images/prop5_4.png", "images/prop5_5.png", "images/prop5_6.png"],
       "floorplan": "images/floorplan5.png",
       "description": "Charming 3-bedroom hillside bungalow.",
-      "longDescription": "A serene retreat with breathtaking views of the Kandy mountains. This property features traditional Kandyan architecture and a cool, misty climate year-round.",
+      "longDescription": "A serene retreat with breathtaking views of the Kandy mountains. This property features traditional Kandyan architecture.",
       "added": { "month": "October", "day": 5, "year": 2025 }
     },
     {
@@ -81,11 +88,12 @@
       "price": 28000000,
       "tenure": "Leasehold",
       "location": "Marine Drive, Wellawatte",
+      "postcode": "CB6",
       "picture": "images/prop6.png",
-      "images": ["images/prop6_1.png", "images/prop6_2.png"],
+      "images": ["images/prop6_1.png", "images/prop6_2.png", "images/prop6_3.png", "images/prop6_4.png", "images/prop6_5.png", "images/prop6_6.png"],
       "floorplan": "images/floorplan6.png",
       "description": "Modern studio apartment on the coast.",
-      "longDescription": "Perfect for young professionals, this studio offers stunning sunset views and is within walking distance of public transport and shopping malls.",
+      "longDescription": "Perfect for young professionals, this studio offers stunning sunset views and is within walking distance of public transport.",
       "added": { "month": "September", "day": 28, "year": 2025 }
     },
     {
@@ -95,11 +103,12 @@
       "price": 55000000,
       "tenure": "Freehold",
       "location": "Galle Fort, Galle",
+      "postcode": "GL1",
       "picture": "images/prop7.png",
-      "images": ["images/prop7_1.png", "images/prop7_2.png"],
+      "images": ["images/prop7_1.png", "images/prop7_2.png", "images/prop7_3.png", "images/prop7_4.png", "images/prop7_5.png", "images/prop7_6.png"],
       "floorplan": "images/floorplan7.png",
       "description": "Heritage 4-bedroom house inside the Fort.",
-      "longDescription": "Own a piece of history with this beautifully restored Dutch-period home located within the UNESCO World Heritage Site of Galle Fort. Features a central courtyard and original stone walls.",
+      "longDescription": "Own a piece of history with this beautifully restored Dutch-period home located within the UNESCO World Heritage Site of Galle Fort.",
       "added": { "month": "August", "day": 14, "year": 2025 }
     }
   ]

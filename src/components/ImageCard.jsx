@@ -27,7 +27,7 @@ const ImageCard =({product, onAddToFavorites }) => {
                     <button className="view-details-btn"> View Full Details</button>
                 </Link>
                 <p><strong>Bedrooms: </strong>{bedrooms} </p>
-                <p><strong>Location: </strong>{location}</p>
+                <p><strong>Location: </strong>{location} ({product.postcode})</p>
                 <p><strong>Added: </strong>{added.month} {added.day}, {added.year}</p>
 
                 {/*Favourite section button*/}
