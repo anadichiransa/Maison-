@@ -34,6 +34,25 @@ it("filters properties correctly when a location is typed" ,() => {
     });
 });
 
+//Test 02 : Price filters accordingly
+it("filters properties based on minimum price input" ,() => {
+    const minPriceInput = screen.getByPlaceholderText(/Min Price/i);
+
+    //Setting hign min price which will hide the cheap properties
+    fireEvent.change(minPriceInput, {target: {value: "100000000"} });
+
+    //Check whether properties below 100M are hidden
+    const priceElements = screen.queryAllByText(/\$/);
+    priceElements.forEach(price => {
+        const numericPrice = parseInt(price.textContent.replace(/[^0-9]/g, " "));
+        expect(numericPrice).toBeGreaterThanOrEqual(100000000);
+    });
+});
+
+
+
+
+
 
 
 
