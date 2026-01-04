@@ -77,7 +77,7 @@
         "images/P5/prop5_1.png", "images/P5/prop5_2.png", "images/P5/prop5_3.png", 
         "images/P5/prop5_4.png", "images/P5/prop5_5.png", "images/P5/prop5_6.png"
       ],
-      "floorplan": "images/floorplan5.png",
+      "floorplan": "images/P5/floorplan5.png",
       "description": "Premium 3-bedroom apartment with ocean views.",
       "longDescription": "Experience luxury living at its finest with this high-floor apartment overlooking the Indian Ocean. Features include a fully fitted modern kitchen, maid's quarters, and access to an infinity pool and gym.",
       "added": { "month": "January", "day": 12, "year": 2026 }
