@@ -51,7 +51,7 @@ const PropertyPage = ({properties}) => {
                 </div>
             </div>
             
-            <p className="detail-price"> Price: ${property.price.toLocaleString()}</p>
+            <p className="detail-price"> Price: Rs.{property.price.toLocaleString()}</p>
 
             {/*React tabs*/}
             <div className="tabs-container">

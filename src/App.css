@@ -270,7 +270,7 @@ select {
   width: 25px;
   height: 25px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 8px;
   line-height: 1;
   position: absolute;
   right: 10px;
@@ -368,7 +368,7 @@ select {
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100%; 
-  margin-bottom: 8px; /* Space between this and the Favorite button */
+  margin-left:4px;
   font-weight: 600;
 }
 
@@ -377,6 +377,7 @@ select {
   color: var(--cream);
   transform: translateY(-2px);
 }
+
 
 /* Adjusting the fav-btn to look like a secondary action */
 .fav-btn {
@@ -390,6 +391,7 @@ select {
   transition: all 0.3s ease;
   width: 100%;
   font-weight: 600;
+  margin-left:4px;
 }
 
 .fav-btn:hover {

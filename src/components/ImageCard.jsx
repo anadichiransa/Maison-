@@ -20,16 +20,17 @@ const ImageCard =({product, onAddToFavorites }) => {
 
             {/* Image description */}
             <div className="description">
-                <h3>{type} - ${price.toLocaleString()}</h3>
+                <h3>{type} - RS.{price.toLocaleString()}</h3>
 
                 {/*View detail*/}
                 <Link to= {`/property/${product.id}`}>
                     <button className="view-details-btn"> View Full Details</button>
                 </Link>
+                <div className="poperty-display">
                 <p><strong>Bedrooms: </strong>{bedrooms} </p>
                 <p><strong>Location: </strong>{location} ({product.postcode})</p>
                 <p><strong>Added: </strong>{added.month} {added.day}, {added.year}</p>
-
+                </div> 
                 {/*Favourite section button*/}
                 <button className="fav-btn" onClick={() => onAddToFavorites(product)}> Add to the Favorites </button>
             </div>

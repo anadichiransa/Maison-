@@ -109,8 +109,8 @@ function App(){
         <div className="footer-content">
           <h3>Believe in Finding it </h3>
           <div className="footer-bottom">
-            <p>&copy 2026 Maison. All rights reserved</p>
-            <p>Securely developed with Input Sanitization & CSP</p>
+            <p>2026 Maison | Your Journey Home Starts Here </p>
+            <p>Verified Secure Environment.  All rights reserved. </p>
           </div>
         </div>
       </footer>
