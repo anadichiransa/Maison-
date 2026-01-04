@@ -10,7 +10,7 @@ import PropertyPage from "./components/PropertyPage";
 function App(){
   const [allProperties, setAllProperties ] = useState([]); // holds all the properties loaded from JSON
   const [filteredProperties, setFilteredProperties ] = useState([]); // holds filtered properties
-  const [favorites, setFavorites] =useState([]);
+  const [favorites, setFavorites] =useState([]); //holds the properties for favourites
 
   const addToFavorites =(property) => {
 
@@ -81,7 +81,7 @@ function App(){
     setFilteredProperties(filtered);
   };
 
-    //Render the UI
+    //Render the UI and client side router
     return (
       <Router>
       <main>
@@ -107,7 +107,7 @@ function App(){
       </main>
       <footer>
         <div className="footer-content">
-          <h3>Believe in Finding it </h3>
+          <h3>Find it. Love it. Live it. </h3>
           <div className="footer-bottom">
             <p>2026 Maison | Your Journey Home Starts Here </p>
             <p>Verified Secure Environment.  All rights reserved. </p>

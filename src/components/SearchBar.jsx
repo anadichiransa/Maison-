@@ -19,7 +19,7 @@ const SearchBar = ({onSearch}) => {
 
     return(
         <section className="search-container">
-            <h1> Believe in Finding it </h1>
+            <h1> Maison </h1>
             <h3> Search for the property you are looking for </h3>
 
             <form className="search-form" onSubmit={(e) => e.preventDefault()}>
