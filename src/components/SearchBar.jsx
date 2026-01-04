@@ -23,16 +23,18 @@ const SearchBar = ({onSearch}) => {
             <h3> Search for the property you are looking for </h3>
 
             <form className="search-form" onSubmit={(e) => e.preventDefault()}>
-
+                
                 {/*Search by location or postcode*/}
+            
                 <div className="filter-group">
-                    <label>Search Location or Postcode</label><br/>
+                    <br/><label>Search Location or Postcode</label>
                     <input type="text" id="term" name="term" placeholder="e. g. Colombo" onChange={handleChange} /> <br/>
                 </div>
+                
 
                 {/*Search by dropdown list Home or Flat*/}
                 <div className="filter-group">
-                    <label>Property Type</label>
+                    <br/><label>Property Type</label>
                     <select name="type" onChange={handleChange}>
                         <option value="any">Any Type</option>
                         <option value="House">House</option>
