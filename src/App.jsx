@@ -105,6 +105,15 @@ function App(){
         
         </Routes>
       </main>
+      <footer>
+        <div className="footer-content">
+          <h3>Believe in Finding it </h3>
+          <div className="footer-bottom">
+            <p>&copy 2026 Maison. All rights reserved</p>
+            <p>Securely developed with Input Sanitization & CSP</p>
+          </div>
+        </div>
+      </footer>
       </Router>
     );
   }

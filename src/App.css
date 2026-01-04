@@ -511,25 +511,6 @@ footer {
   gap: 20px;
 }
 
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.footer-links a {
-  color: var(--cream);
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: var(--white);
-  text-decoration: underline;
-}
-
 .footer-bottom {
   font-size: 12px;
   border-top: 1px solid rgba(230, 221, 163, 0.2);
