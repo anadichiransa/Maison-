@@ -54,7 +54,7 @@ it("Adds property to favorites section once clicked on button", async () => {
     const addButtons = await screen.findAllByText(/Add to the Fav/i);
     fireEvent.click(addButtons[0]);
 
-    const favHeading = screen.getByRole("heading", {name : /^Favorites$/i, level: 2 });
+    const favHeading = screen.getByRole("heading", {name : /^Select - Secure - Settle$/i, level: 2 });
     const favSection = favHeading.closest("div");
 
     expect(favSection).not.toHaveTextContent(/Drag properties here/i);
