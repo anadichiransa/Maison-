@@ -244,6 +244,7 @@ input[type="text"],input[type="number"],select{
 	background-color: var(--forest);
 	font-size: 12px;
 	padding: 5px 10px;
+	border-radius:20px;
 }
 
 .sidebar-info-block{
@@ -340,7 +341,7 @@ input[type="text"],input[type="number"],select{
 	flex: 1 0 280px;
 	background-color:var(--white);
 	border-radius: 18px;
-	box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.8);
 	transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	padding: 12px;
 	display: flex;
@@ -487,27 +488,33 @@ input[type="text"],input[type="number"],select{
 
 .tab-buttons {
 	display:flex;
-	gap: 10px;
-	border-bottom: 2px solid var(--cream);
-	margin-bottom: 20px;
+	gap: 15px;
+	border-bottom: 2px solid rgba(244,179,66,0.2);
+	margin-bottom: 25px;
+	padding-bottom:10px;
 	overflow-x: auto;
 	white-space: nowrap;
 	-webkit-overflow-scrolling: touch;
 }
 
 .tab-btn{
-	padding: 10px 20px;
-	border:none;
-	background: none;
+	padding: 10px 24px;
+	border:1px solid rgba(255,255,255,0.3);
+	background: rgba(255,255,255,0.1);
 	font-size:16px;
 	font-weight:600;
 	cursor: pointer;
-	color: var(--forest);
+	color: var(--dark-green);
+	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.tab-btn:active{
+.tab-btn.active{
+	background-color: var(--white);
 	color: var(--dark-green);
-	border-bottom: 4px solid var(--dark-green);
+	transform: translateY(-3px);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+	border-radius:20px;
+	border-bottom:#1a1a1a;
 }
 
 .tab-content{
