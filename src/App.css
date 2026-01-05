@@ -77,7 +77,7 @@ footer{
 	margin:0 auto;
 }
 
-.filter-froup{
+.filter-group{
 	display:flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -580,7 +580,14 @@ input[type="text"],input[type="number"],select{
 	border: 1px solid var(--cream);
 }
 
+/*Solution Justification:
+ - Implemented hand-written media queries.
+ - Used flex and flex-direction: column for smaller screen sizes. This will result in making sidebar and search results groups stack vertically so they fit on narrow phones screen without breaking.
+ - Added favorites section to top using -1,Then user is able to see saved properties first before scrolling down to see new ones and it make user experince easier.
+ - For individual property pages added overflow-x:auto as it saves space using slide sideways..
+ */
 
+/*Tablet and smaller than iPad landscape*/
 @media (max-width:1024px){
 	.container{
 		flex-direction: column;
@@ -596,6 +603,7 @@ input[type="text"],input[type="number"],select{
 	}
 }
 
+/*Mobile layout*/
 @media(max-width:768px){
 	.detail-main-image{
 		height: 300px;
@@ -642,6 +650,7 @@ input[type="text"],input[type="number"],select{
 
 }
 
+/*Extra small devices*/
 @media (max-width:600px){
 	.floorplan-img{
 		max-width: 100%;

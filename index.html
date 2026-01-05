@@ -21,3 +21,9 @@
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+
+<!--Security justification
+- CSP helps restricts scripts,styles,images and connections only to trusted sources. Therefore it helps to reduce risks including data leaks.
+-Utilized React's bulit-in JSX encoding to protect the property directory.(ex:ImageCard.jsx")
+As React automatically excapes all dynamic content, it neutralize potential XSS attcks by treating data as plain text rather than excutable HTML.
+-->
