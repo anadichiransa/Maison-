@@ -3,8 +3,9 @@ import React,{ useState, useEffect } from "react";
 import "./App.css";
 import SearchBar from "./components/SearchBar";
 import Gallery from "./components/Gallery";
-
 import PropertyPage from "./components/PropertyPage";
+//Git Repository link: https://github.com/anadichiransa/Maison-
+//Deployed URL: https://maison-rosy.vercel.app/
 
 
 function App(){
