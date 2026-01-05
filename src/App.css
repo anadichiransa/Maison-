@@ -254,7 +254,7 @@ input[type="text"],input[type="number"],select{
 
 .section-title{
 	font-size: 13px;
-	color: var(--luxury-gold);
+	color: var(--dark-green);
 	text-transform: uppercase;
 	text-align:center;
 	letter-spacing: 2px;
@@ -262,7 +262,7 @@ input[type="text"],input[type="number"],select{
 	font-weight: 700;
 }
 
-.info-item, .testimonial-item{
+.info-items, .testimonal-item{
 	background: rgba(255,255,255,0.45);
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
@@ -273,15 +273,15 @@ input[type="text"],input[type="number"],select{
 	transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
 }
 
-.info-item{
+.info-items{
 	margin-bottom:15px;
 }
 
-.info-item:hover , .testimonial-item:hover{
+.info-items:hover , .testimonal-item:hover{
 	background: rgba(255,255,255,0.6);
 	transform: translateY(-8px);
 	box-shadow: 0 12px 30px rgba(31,61,43,0.15);
-	border: 1px solid var(--luxury-gold);
+	border: 1px solid var(--dark-green);
 }
 
 /*branch details*/
@@ -300,7 +300,7 @@ input[type="text"],input[type="number"],select{
 }
 
 .branch-contact{
-	color: var(--accent-magenta) !important;
+	color: var(--dark-green) !important;
 	font-weight:700;
 	display:block;
 	margin-top: 5px;
@@ -420,10 +420,12 @@ input[type="text"],input[type="number"],select{
 
 .detail-main-image{
 	width: 100%;
-	max-width: 800px;
-	height:auto;
+	max-width: 700px;
+	height:450px;
+	object-fit:cover;
 	border-radius: 20px;
 	box-shadow: 0 8px 25px rgba(31,61,43,0.15);
+	transition: opacity 0.3s ease-in-out;
 	display: block;
 	margin: 20px 0;
 }
@@ -477,7 +479,10 @@ input[type="text"],input[type="number"],select{
 	margin-top:30px;
 	background: var(--light-gray);
 	border-radius: 15px;
-	padding:20px;
+	padding:15px;
+	overflow:hidden;
+	max-width:100%;
+	width:100%;
 }
 
 .tab-buttons {
@@ -527,6 +532,9 @@ input[type="text"],input[type="number"],select{
 	border-radius: 15px;
 	box-shadow: 0 4px 15px rgba(31,61,43,0.1);
 	margin-bottom:15px;
+	height:auto;
+	min-height: 250px;
+	max-width:100%;
 }
 
 .map-footer{
@@ -566,5 +574,70 @@ input[type="text"],input[type="number"],select{
 }
 
 
+@media (max-width:1024px){
+	.container{
+		flex-direction: column;
+		gap:30px;
+	}
 
+	.all-items, .favorites {
+		width:100%;
+	}
 
+	.favorites{
+		order: -1;
+	}
+}
+
+@media(max-width:768px){
+	.detail-main-image{
+		height: 300px;
+		max-width: 100%;
+	}
+
+	.map-footer{
+		flex-direction: column;
+		align-items: flex-start;
+		gap:10px;
+	}
+
+	.container{
+		flex-flow:column nowrap;
+	}
+
+	.all-items{
+		background-color: white;
+		width:100%;
+		padding: 30px 20px;
+	}
+
+	.all-items .gallery{
+		flex-flow:column;
+		gap: 20px;
+	}
+
+	.all-items .gallery .card{
+		display:flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width:100%;
+	}
+	
+	.favorites{
+		order:-1;
+		width: 100%;
+	}
+
+	.proerty-details-content{
+		flex-direction: column;
+		padding:10px;
+	}
+
+}
+
+@media (max-width:600px){
+	.floorplan-img{
+		max-width: 100%;
+		margin: 10px auto;
+	}
+}

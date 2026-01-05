@@ -111,32 +111,25 @@ const Gallery = ({properties,favorites, onAddToFavorites,onRemoveFromFavorites, 
                             <p className="quote">"Maison made finding our villa in Kandy effortless. The secure portal gave us total peace of mind."</p>
                             <p className="client-name"> -Aruni & Sunil Perera</p>
                         </div>
-                     </div>
-
-                     <div className="testimonal-block">
-                        <h4 className="section-title">Client Feedback</h4>
+                     
                         <div className="testimonal-item">
                             <p className="quote">"Exceptional service and the most curated collection of apartments in Colombo. Highly recommended!"</p>
                             <p className="client-name"> -Dr.James Karunarathne</p>
                         </div>
-                     </div>
 
-                     <div className="testimonal-block">
-                        <h4 className="section-title">Client Feedback</h4>
+
+
                         <div className="testimonal-item">
                             <p className="quote">"The drag-and-drop favorites feature made our house hunting so organized. Truly a professional experience."</p>
                             <p className="client-name"> -Nilanthi & Karuna Silva</p>
                         </div>
-                     </div>
 
-                     <div className="testimonal-block">
-                        <h4 className="section-title">Client Feedback</h4>
                         <div className="testimonal-item">
                             <p className="quote">"Found a beach-front property in Galle within a week. The detailed maps and floorplans were incredibly helpful."</p>
                             <p className="client-name"> -Shel & Sara Thomas</p>
                         </div>
-                     </div>
 
+                    </div>
 
                 </div>
 
