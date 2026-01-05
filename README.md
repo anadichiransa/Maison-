@@ -1,16 +1,40 @@
-# React + Vite
+#🏰 Maison | Luxury Real Estate Portal
+Maison is a high-end property directory designed for Sri Lanka’s most exclusive neighborhoods. This project focuses on a seamless, secure, and responsive user experience, utilizing modern React patterns and high-performance "Glassmorphism" aesthetics.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##✨ Key Features
+Dynamic Property Discovery: Real-time search and filtering across curated listings.
 
-Currently, two official plugins are available:
+Interactive Favorites Portfolio: A specialized "Drag-and-Drop" style sidebar allowing users to curate their dream home collection.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Luxury 3D UI: Custom Glassmorphism tabs and GPU-accelerated animations for a "boutique" feel.
 
-## React Compiler
+Fully Responsive: Bespoke hand-written media queries optimized for Desktop, iPad Landscape, and Mobile viewports.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Institutional Security: Robust Content Security Policy (CSP) and JSX auto-encoding to ensure user data integrity.
 
-## Expanding the ESLint configuration
+##🛠️ Technical Stack
+Frontend: React.js (Hooks & State Management)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Styling: Custom CSS3 with CSS Variables (:root)
+
+Security: Content Security Policy (CSP) headers & JSX Sanitization
+
+Performance: GPU Hardware Acceleration (translateZ)
+
+Icons & Fonts: Google Fonts (Poppins) & Lucide Icons
+
+##🛡️ Reliability & Security
+"Security is not a feature; it is a foundation."
+
+XSS Protection: Implemented a strict Content Security Policy that whitelists only trusted resources (Google Maps, Fonts), neutralizing Cross-Site Scripting threats.
+
+Data Integrity: All dynamic content is rendered using JSX Encoding, ensuring that user inputs are never executed as HTML.
+
+Availability: The application maintains business continuity through a responsive design that ensures 100% functionality on mobile devices.
+
+##📱 Responsive Design Justification
+I implemented a custom layout strategy to ensure the "Maison" experience is never compromised on smaller screens:
+
+1024px Transition: Switched to a Flexbox column layout, using order: -1 to prioritize the Favorites sidebar at the top of the mobile search page.
+
+Property Details: Integrated horizontally scrollable 3D tabs for floorplans and descriptions, optimizing vertical space while maintaining interactivity.
